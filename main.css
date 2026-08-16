@@ -1,4 +1,4 @@
-.container {
+.container {    
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -6,20 +6,29 @@
     width : 400px;
     height: 100vh;
     margin: 0 auto;
-    border-radius: 40px;
+    border-radius: 50px;
     /* liquid glass */
     background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(9px);
-  -webkit-backdrop-filter: blur(9px);
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 
-    0 8px 32px rgba(0, 0, 0, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.5),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
-    inset 0 0 0px 0px rgba(255, 255, 255, 0);
-  position: relative;
-  overflow: hidden;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+        inset 0 0 0px 0px rgba(255, 255, 255, 0);
+    position: relative;
+    overflow: hidden;
+}
+.backgroundvideo {
+    position: fixed;
+    left:0;
+    top: 0 ;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+
 }
 .other_website_profile {
     display: flex;
@@ -31,7 +40,10 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom left, #3399ff 0%, #cc66ff 81%);
+    position: relative;
+    overflow-x: hidden;
+    min-height: 100vh;
+    /*background: linear-gradient(to bottom left, #3399ff 0%, #cc66ff 81%);*/
 }
 .avatar img {
     border-radius: 50%;
@@ -45,13 +57,14 @@ body {
     display: inline-block;
     width: 50px;
     height: 50px;
-    background-color: #0d47a1; 
+    background-color: #0a1f44; 
     -webkit-mask-size: contain;
     mask-size: contain;
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     -webkit-mask-position: center;
     mask-position: center;
+    transition: transform 0.3s ease, filter 0.3s ease; 
 }
 
 .icon-github {
@@ -76,4 +89,15 @@ body {
 .mycareer{
     font-family: 'Coiny', cursive;
     font-size: 25px;
+}
+.icon:hover {
+    transform: translateY(-8px) scale(1.15);
+    filter: drop-shadow(0 8px px rgba(0, 0, 0, 0.3));
+}
+.avatar:hover{
+    transform: translateY(-8px) scale(1.15);
+    filter: drop-shadow(0 6px 8px rgba(0, 0, 0, 0.3));
+}
+.avatar{
+    transition: transform 0.3s ease, filter 0.3s ease; 
 }
