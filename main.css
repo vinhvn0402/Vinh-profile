@@ -114,7 +114,7 @@ body {
     margin-top: 10px;
 }
 .footer{
-    position: fixed;
+    position: relative;
     bottom: 12px;
     left: 0;
     width: 100%;
