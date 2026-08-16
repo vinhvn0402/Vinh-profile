@@ -5,7 +5,7 @@
     justify-content: center;
     width : 400px;
     height: 100vh;
-    margin: 0 auto;
+    margin: 30px auto 0 auto;
     border-radius: 50px;
     /* liquid glass */
     background: rgba(255, 255, 255, 0.05);
@@ -52,6 +52,7 @@ body {
 .myname {
     font-family: 'Mali', cursive;
     font-weight: 700;
+    margin-bottom: -2px;
 }
 .icon {
     display: inline-block;
@@ -89,6 +90,7 @@ body {
 .mycareer{
     font-family: 'Coiny', cursive;
     font-size: 25px;
+    margin-bottom: -3px;
 }
 .icon:hover {
     transform: translateY(-8px) scale(1.15);
@@ -100,4 +102,24 @@ body {
 }
 .avatar{
     transition: transform 0.3s ease, filter 0.3s ease; 
+}
+.stack{
+    font-family: 'Mali', cursive;
+    font-size: 20px;
+    margin-top:5px;
+}
+.location{
+    font-family: 'Mali', cursive;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.footer{
+    position: fixed;
+    bottom: 12px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Mali', sans-serif;
 }

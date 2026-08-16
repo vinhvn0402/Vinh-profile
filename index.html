@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinh-profile</title>
+    <title>Vinh·profile</title>
+    <link rel="icon" type="image/jpeg" href="folder/ava.jpg">
     <link rel = "stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,9 +25,9 @@
         </div>
 
         <h1 class = "myname"> Vinh Nguyen</h1>
-
-        <h2 class = "mycareer"> Just a real developer</h2>
-
+        <p class="location ">📍 TuyHoa, Vietnam </p>
+        <h2 class = "mycareer"> Just a  developer</h2>
+        <p class = "stack"> HTML · C++ · Python · CSS </p>
         <br><br>
         <div class = "other_website_profile">
             <!-- GitHub profile-->
@@ -57,20 +58,8 @@
                 </div>
         </div>
     </div>
-    <script>
-    const video = document.getElementById('bgVideo');
-    
-    // Thử phát ngay khi trang load
-    video.play().catch(() => {
-        // Nếu bị chặn, chờ người dùng chạm vào màn hình 1 lần để phát
-        document.addEventListener('touchstart', () => {
-            video.play();
-        }, { once: true });
-        
-        document.addEventListener('click', () => {
-            video.play();
-        }, { once: true });
-    });
-</script>
+    <footer class="footer">
+        <p>© 2026 Vinh Nguyen. All rights reserved.</p>
+    </footer>
 </body>
 </html>
