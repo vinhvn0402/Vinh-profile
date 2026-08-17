@@ -83,9 +83,9 @@ body {
     mask-image: url('folder/facebook.svg');
 }
 
-.icon-sqrtoj {
-    -webkit-mask-image: url('folder/sqrtoj.svg');
-    mask-image: url('folder/sqrtoj.svg');
+.icon-githubproject {
+    -webkit-mask-image: url('folder/github.png');
+    mask-image: url('folder/github.png');
 }
 .mycareer{
     font-family: 'Coiny', cursive;
