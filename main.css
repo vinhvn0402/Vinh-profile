@@ -116,6 +116,7 @@ body {
 }
 .footer{
     position: relative;
+    margin-top: 150px;
     bottom: 12px;
     left: 0;
     width: 100%;
