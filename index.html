@@ -109,5 +109,35 @@
             }
         });
     });
+    // Hàm MỞ Popup
+function openPopup(popupId) {
+    const popup = document.getElementById(popupId);
+    if (popup) {
+        popup.classList.remove('closing');
+        popup.classList.add('active');
+    }
+}
+
+function closePopup(popupId) {
+    const popup = document.getElementById(popupId);
+    if (popup && popup.classList.contains('active')) {
+        popup.classList.add('closing');
+        
+        setTimeout(() => {
+            popup.classList.remove('active');
+            popup.classList.remove('closing');
+        }, 250);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.popup-overlay').forEach(overlay => {
+        overlay.addEventListener('click', (e) => {
+            if (e.target === overlay) {
+                closePopup(overlay.id);
+            }
+        });
+    });
+});
 </script>
 </html>
