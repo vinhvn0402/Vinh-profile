@@ -177,15 +177,6 @@
         inset 0 1px 1.5px rgba(255, 255, 255, 0.6); 
 }
 
-/* Hiệu ứng khi Click/Chạm vào nút */
-.contactbutton:active,
-.donatebutton:active {
-    transform: translateY(0px) scale(0.97);
-    box-shadow: 
-        0 2px 8px rgba(0, 0, 0, 0.2),
-        inset 0 1px 1px rgba(255, 255, 255, 0.2);
-}
-
 /* Chỉnh lại margin-top cho chữ bên trong để căn đúng giữa nút */
 .contacttext,
 .donatetext {
@@ -313,12 +304,7 @@
         0 0 12px rgba(255, 255, 255, 0.15),   
         inset 0 1px 1.5px rgba(255, 255, 255, 0.6);
 }
-.popup-close:active {
-    transform: translateY(0px) scale(0.95);
-    box-shadow: 
-        0 2px 8px rgba(0, 0, 0, 0.2),
-        inset 0 1px 1px rgba(255, 255, 255, 0.2);
-}
+
 /* Animation mờ dần cho lớp nền tối (Overlay) */
 .popup-overlay.active {
     display: flex;
