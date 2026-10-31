@@ -14,15 +14,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
 </head>
 <body>
-    <img class="imgbackground" src="folder/pink-aesthetic-3840x2160-25841.jpg">
+    <audio id="bgm" src="folder/nhac.mp3" loop></audio>
+
+    <div id="enter-screen">
+  <button id="enter-btn">Click để vào trang</button>
+    </div>
+    <img class="imgbackground" src="folder/cloud.jpg">
 
     <div class = "container"> 
         <div class = "background_avatar">
-            <img src = "folder/cloud.jpg" alt="backgound" height = "500px" width = "400px">
+            <img src = "folder/background.jpg" alt="backgound" height = "500px" width = "400px">
 
         </div>
         <div class = "avatar">
-            <img src = "folder/ava.jpg" alt = "avatar" height = "200px" width = "200px">
+            <img src = "folder/avatar.jpg" alt = "avatar" height = "200px" width = "200px">
         </div>
 
         <h1 class = "myname"> Vinh Nguyen</h1>
@@ -51,10 +56,10 @@
                     <span class="icon icon-facebook"></span>
                 </a>
              </div>
-              <!-- github project-->
-                <div class = "githubproject">
-                    <a href = "https://vinhvn0402.github.io/Convert-VND-to-USD/" target="_blank">
-                        <span class="icon icon-githubproject"></span>
+              <!-- instagram-->
+                <div class = "instagram">
+                    <a href = "https://www.instagram.com/vinhvn512?psln=MWpmdjIxdTVybzFpcg%3D%3D&utm_source=qr" target="_blank">
+                        <span class="icon icon-instagram"></span>
                     </a>
                 </div>
         </div>
@@ -88,11 +93,23 @@
     <div class = "popup-overlay" id="contactpopup">
         <div class = "contactcard">
             <div class = "popup-header"><button class="popup-close" onclick="closePopup('contactpopup')">✕</button></div>
+            <div class = "zalo"><p class = "acczalo">Liên hệ qua zalo: 0968007537</p></div>
             <div class = "Lienhe"><p class ="contact_text">Vui lòng liên hệ tại gmail: quanvinhnguyen512@gmail.com</p></div>
             <div class = "camon2"><p>Cảm ơn bạn đã ghé website của Vinh!♥</p></div>
         </div>
     </div>
+    <script>
+  const audio = document.getElementById('bgm');
+  const enterScreen = document.getElementById('enter-screen');
+
+  document.getElementById('enter-btn').addEventListener('click', () => {
+    audio.volume = 0.5;   // âm lượng 0 đến 1
+    audio.play();
+    enterScreen.classList.add('hidden');
+  });
+</script>
 </body>
+
 <script>
     function openPopup(id) {
         document.getElementById(id).classList.add('active');
